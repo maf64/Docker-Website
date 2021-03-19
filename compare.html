@@ -1,10 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Docker vs. Virtualization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<style>
+    body {
+        background-image: url('docker.jpg');
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+        height: 40em;
+        margin-top: 0;
+        padding: 0;
+    }
+</style>
 
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Docker vs. Virtualization</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="virtualization.html">Virtualization</a></li>
+            <li><a href="containerization.html">Containerization</a></li>
+            <li><a href="compare.html"><strong>Comparison</strong></a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="commands.html">Commands</a></li>
+            <li><a href="connect.html">Connect</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h3 style="color: white">Comparison</h3>
+    <p style="color: white; margin-top: 1cm>">Virtualization enables you to run multiple operating systems on the
+        hardware of a single physical server, while containerization enables you to deploy multiple applications using
+        the same operating system on a single virtual machine or server.<br>
+        <br> Virtual machines are great for supporting applications that require an operating system’s full
+        functionality when you want to deploy multiple applications on a server, or when you have a wide variety of
+        operating systems to manage. Containers are a better choice when your biggest priority is to minimize the number
+        of servers you’re using for multiple applications.<br>
+        <br>Containers are an excellent choice for tasks with a much shorter lifecycle. With their fast set up time,
+        they are suitable for tasks that may only take a few hours. Virtual machines have a longer lifecycle than
+        containers, and are best used for longer periods of time.<br></p>
+    <hr>
+    <h3 style="color: white">Benefits of Containerization</h3>
+    <p style="color: white">One of the key benefits of containerization is that you can often pack many more containers
+        on a host machine than you can on virtual machines. That stands to reason, because each VM is a self-contained
+        system in its own right, with its own operating system and virtualized hardware and its own unique resources
+        allocated to it. If each VM is 10Gb in size, then 10 VMs will take up 10×10 = 100Gb of resources.
+
+        But take a 10Gb container and run ten of them, or even a hundred, and you won’t use anything close to 100Gb of
+        resources. That’s due to all the sharing that’s occurring.
+
+        In effect, there’s only one operating system (strictly speaking one kernel) shared by all the containers. And
+        there’s no virtualized hardware — just a little application and operating environment in a container. And that
+        means you can run far more containers on a host than you could possibly run fully-blown virtual machines.
+
+        There’s an add-on effect of sharing the kernel and other resources as well, and it’s that containers can
+        start-up in less than a second. That’s not the case with VMs, which require a full virtual system boot and can
+        take substantially longer to get going.
+
+        You can run Docker containers on AWS and Azure public clouds, for example, and containers are easy to share.
+        That’s particularly useful for test and dev teams — one of the most commonly cited potential beneficiaries of
+        Docker.</p>
+    <hr>
+    <h3 style="color: white">Benefits of Virtualization</h3>
+    <p style="color: white">Visually, each virtual machine image looks like a data folder. Each can be moved and copied
+        as easily as you can move and copy other kinds of files. In this way, your team can centralize workloads and run several different
+        operating systems without increasing overhead, a huge advantage over on-premises hardware. You can also update
+        apps and the OS without affecting the end-user experience.<br>
+
+        <br>However, virtual machines are not without their disadvantages:<br>
+        - Since each VM includes an OS and a virtual copy of all the hardware the OS requires, VMs require significant RAM
+        and CPU resources <br>
+
+        - Due to the increase in virtual copies and required resources, the software development life cycle is more
+        complex with VMs<br>
+
+        - Moving VMs between public clouds, private clouds and traditional data centers can be challenging</p>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+-->
 </body>
 </html>
