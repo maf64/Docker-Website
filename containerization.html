@@ -83,8 +83,8 @@
     <h3 style="color: white">Components of Docker</h3>
     <p style="color: white">The main components of Docker include – Docker clients and servers, Docker images,
         Dockerfile, Docker Registries, and Docker containers. These components are explained in details in the below
-        section:<br>
-        1. Docker Clients and Servers– Docker has a client-server architecture. The Docker Daemon/Server consists of all
+        section:
+        <br>1. Docker Clients and Servers– Docker has a client-server architecture. The Docker Daemon/Server consists of all
         containers. The Docker Daemon/Server receives the request from the Docker client through CLI or REST APIs and
         thus processes the request accordingly. Docker client and Daemon can be present on the same host or different
         host. </p>
@@ -94,18 +94,18 @@
         20. Base images can also be created from scratch and then required applications can be added to the base image
         by modifying it thus this process of creating a new image is called “committing the change”.<br>
 
-        3. Docker File– Dockerfile is a text file that contains a series of instructions on how to build your Docker image.
+        <br>3. Docker File– Dockerfile is a text file that contains a series of instructions on how to build your Docker image.
         This image contains all the project code and its dependencies. The same Docker image can be used to spin ‘n’
         number of containers each with modification to the underlying image. The final image can be uploaded to Docker
         Hub and share among various collaborators for testing and deployment. The set of commands that you need to use
         in your Docker File are FROM, CMD, ENTRYPOINT, VOLUME, ENV, and many more.<br>
 
-        4. Docker Registries– Docker Registry is a storage component for Docker images. We can store the images in either
+        <br>4. Docker Registries– Docker Registry is a storage component for Docker images. We can store the images in either
         public/private repositories so that multiple users can collaborate in building the application. Docker Hub is
         Docker’s own cloud repository. Docker Hub is called a public registry where everyone can pull available images
         and push their own images without creating an image from scratch.<br>
 
-        5. Docker Containers– Docker Containers are runtime instances of Docker images. Containers contain the whole kit
+        <br>5. Docker Containers– Docker Containers are runtime instances of Docker images. Containers contain the whole kit
         required for an application, so the application can be run in an isolated way. For eg.- Suppose there is an
         image of Ubuntu OS with NGINX SERVER when this image is run with docker run command, then a container will be
         created and NGINX SERVER will be running on Ubuntu OS. </p>
