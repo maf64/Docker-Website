@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Docker vs. Virtualization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<style>
+    body {
+        background-image: url('docker.jpg');
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+        height: 40em;
+        margin-top: 0;
+        padding: 0;
+    }
+</style>
 
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Docker vs. Virtualization</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="virtualization.html"><strong>Virtualization</strong></a></li>
+            <li><a href="containerization.html">Containerization</a></li>
+            <li><a href="compare.html">Comparison</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="commands.html">Commands</a></li>
+            <li><a href="connect.html">Connect</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h3 style="color: white">Virtualization</h3>
+    <h4 style="color: white">Definition</h4>
+    <p style="color: white; margin-top: 1cm>">In computing, virtualization or virtualisation is the act of creating a
+        virtual version of something, including virtual computer hardware platforms, storage devices, and computer
+        network resources.
+    </p>
+    <hr>
+    <h4 style="color: white">Example</h4>
+    <p style="color: white">Virtualization is technology that lets you create useful IT services using resources that
+        are<br> traditionally bound to hardware. It allows you to use a physical machine’s full capacity by<br>
+        distributing its capabilities among many users or environments.<br>
+
+        In more practical terms, imagine you have 3 physical servers with individual dedicated purposes.<br> One is a
+        mail
+        server, another is a web server, and the last one runs internal legacy applications.<br> Each server is being
+        used
+        at about 30% capacity—just a fraction of their running potential.<br> But since the legacy apps remain important
+        to
+        your internal operations, you have to keep them and the third server that hosts them, right?</p>
+    <img src="server.jpg" alt="server" width=500 height="221">
+    <p style="color: white">Traditionally, yes. It was often easier and more reliable to run individual tasks on<br>
+        individual servers: 1 server, 1 operating system, 1 task. It wasn’t easy to give 1 server multiple brains.<br> But
+        with virtualization, you can split the mail server into 2 unique ones that can handle independent tasks so the<br>
+        legacy apps can be migrated. It’s the same hardware, you’re just using more of it more efficiently.</p>
+    <img src="server2.jpg" alt="server2" width=500 height="221">
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+-->
 </body>
 </html>
