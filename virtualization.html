@@ -65,6 +65,22 @@
     <p style="color: white">Keeping security in mind, you could split the first server again so it could handle another
         task—increasing its use from 30%, to 60%, to 90%. Once you do that, the now empty servers could be reused for
         other tasks or retired altogether to reduce cooling and maintenance costs.</p>
+    <h3 style="color: white">How does Virtualization work?</h3>
+    <hr>
+    <p style="color: white">Software called hypervisors separate the physical resources from the virtual
+        environments—the things that need those resources. Hypervisors can sit on top of an operating system (like on a
+        laptop) or be installed directly onto hardware (like a server), which is how most enterprises virtualize.
+        Hypervisors take your physical resources and divide them up so that virtual environments can use them.
+        \Resources are partitioned as needed from the physical environment to the many virtual environments. Users
+        interact with and run computations within the virtual environment (typically called a guest machine or virtual
+        machine). The virtual machine functions as a single data file. And like any digital file, it can be moved from
+        one computer to another, opened in either one, and be expected to work the same. When the virtual environment is
+        running and a user or program issues an instruction that requires additional resources from the physical
+        environment, the hypervisor relays the request to the physical system and caches the changes—which all happens
+        at close to native speed (particularly if the request is sent through an open source hypervisor based on KVM,
+        the Kernel-based Virtual Machine).
+    </p>
+    <img src="hypervisor.jpg" alt="hypvervisor" width=500 height="221">
 </div>
 
 <!-- Optional JavaScript; choose one of the two! -->
