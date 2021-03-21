@@ -42,42 +42,42 @@
     <h3 style="color: white">Tutorial</h3>
     <p style="color: white; margin-top: 1cm>">Step 1 − The first step is to build our Docker File. Let’s use vim and
         create a Docker File with the following information.</p>
-    <img src="step1.jpg" alt="step1" width=500 height="280">
-    <p style="color: white">The following points need to be noted about the above statements −
+    <img src="step1.jpg" alt="step1" width=300 height="230">
+    <p style="color: white">The following points need to be noted about the above statements<br>
 
-        - We are first creating our image to be from the Ubuntu base image.
+        - We are first creating our image to be from the Ubuntu base image.<br>
 
-        - Next, we are going to use the RUN command to update all the packages on the Ubuntu system.
+        - Next, we are going to use the RUN command to update all the packages on the Ubuntu system.<br>
 
-        - Next, we use the RUN command to install apache2 on our image.
+        - Next, we use the RUN command to install apache2 on our image.<br>
 
-        - Next, we use the RUN command to install the necessary utility apache2 packages on our image.
+        - Next, we use the RUN command to install the necessary utility apache2 packages on our image.<br>
 
-        - Next, we use the RUN command to clean any unnecessary files from the system.
+        - Next, we use the RUN command to clean any unnecessary files from the system.<br>
 
-        -The EXPOSE command is used to expose port 80 of Apache in the container to the Docker host.
+        -The EXPOSE command is used to expose port 80 of Apache in the container to the Docker host.<br>
 
         - Finally, the CMD command is used to run apache2 in the background.</p>
-    <img src=apache2.jpg alt="apache2" width=500 height="280">
+    <img src=apache2.jpg alt="apache2" width=300 height="230">
     <p style="color: white">Now that the file details have been entered, just save the file.<br>
         Step 2 − Run the Docker build command to build the Docker file. It can be done using the following command −</p>
-    <img src=step2.jpg alt="step2" width=500 height="280">
+    <img src=step2.jpg alt="step2" width=300 height="230">
     <p style="color: white">We are tagging our image as mywebserver. Once the image is built, you will get a successful
         message that the file has been built.</p>
-    <img src=my_web_servers.jpg alt="webserver" width=500 height="280">
+    <img src=my_web_servers.jpg alt="webserver" width=500 height="300">
     <p style="color: white">Step 3 − Now that the web server file has been built, it’s now time to create a container
         from the image. We can do this with the Docker run command.</p>
-    <img src=step3.jpg alt="step3" width=500 height="280">
-    <p style="color: white">The following points need to be noted about the above command −
+    <img src=step3.jpg alt="step3" width=300 height="230">
+    <p style="color: white">The following points need to be noted about the above command <br>
 
         - The port number exposed by the container is 80. Hence with the –p command, we are mapping the same port number
-        to the 80 port number on our localhost.
+        to the 80 port number on our localhost.<br>
 
         - The –d option is used to run the container in detached mode. This is so that the container can run in the
-        background.
+        background.<br>
 
         If you go to port 80 of the Docker host in your web browser, you will now see that Apache is up and running.</p>
-    <img src=apache_is_running.jpg alt="apache running" width=500 height="280">
+    <img src=apache_is_running.jpg alt="apache running" width=500 height="300">
 </div>
 
 <!-- Optional JavaScript; choose one of the two! -->
