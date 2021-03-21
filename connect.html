@@ -42,27 +42,52 @@
     <h3 style="color: white">Connecting Pycharm with Docker</h3>
     <p style="color: white; margin-top: 1cm>">Make sure that the following prerequisites are met:<br>
 
-        -   Docker is installed, as described on the page Docker Docs. You can install Docker on the various platforms, but
+        - Docker is installed, as described on the page Docker Docs. You can install Docker on the various platforms,
+        but
         here we'll use the Windows installation.<br>
 
-        -   Note that you might want to repeat this tutorial on different platforms; then use Docker installations for macOS
+        - Note that you might want to repeat this tutorial on different platforms; then use Docker installations for
+        macOS
         and Linux (Ubuntu, other distributions-related instructions are available as well).<br>
 
-        -   You have a stable Internet connection.<br>
+        - You have a stable Internet connection.<br>
 
-        -   Ensure that you have a stable Internet connection, so that PyCharm can download and run busybox:latest. Once you
+        - Ensure that you have a stable Internet connection, so that PyCharm can download and run busybox:latest. Once
+        you
         have successfully configured Docker, you can go offline. <br>
 
-        -   Before you start working with Docker, make sure that the Docker plugin is enabled. The plugin is bundled with
+        - Before you start working with Docker, make sure that the Docker plugin is enabled. The plugin is bundled with
         PyCharm and is activated by default. If the plugin is not activated, enable it on the Plugins page of the
         Settings/Preferences dialog ⌘, as described in Manage plugins.<br>
 
-        -   If you are using Docker for Windows, enable the Expose daemon on tcp://localhost:2375 without TLS option in the
+        - If you are using Docker for Windows, enable the Expose daemon on tcp://localhost:2375 without TLS option in
+        the
         General section of your Docker settings.<br>
 
-        -   Also, for Windows, right-click the Docker whale icon, choose Settings from the context menu, and in the General
+        - Also, for Windows, right-click the Docker whale icon, choose Settings from the context menu, and in the
+        General
         page select the Expose daemon... checkbox:</p>
     <img src="py_docker_general_settings.jpg" alt="pydocker" width=750 height="500">
+    <hr>
+    <h3 style="color: white">Configuring Docker as a remote interpreter</h3>
+    <p style="color: white">Now that we've prepared our example, let's define a Docker-based remote interpreter.<br>
+
+        Ensure that you have downloaded and installed Python on your computer.<br>
+
+        Open the Add Python Interpreter dialog by either way:<br>
+
+        -   When you're in the Editor, the most convenient way is to use the Python Interpreter widget in the Overview of
+        the user interface. Click the widget and select Add Interpreter <br>
+
+        -   If you are in the Settings/Preferences dialog ⌘,, select Project
+        project name | Python Interpreter. Click the The Configure project interpreter icon and select Add.<br>
+
+        In the dialog that opens, select the Docker option, from the drop-down lists select the Docker server (if
+        the server is missing, click New... ), and specify the image name.<br>
+
+        Python interpreter path should have the default value:
+    </p>
+     <img src="py_choose_docker.jpg" alt="pychoosr" width=750 height="500">
 
 </div>
 
